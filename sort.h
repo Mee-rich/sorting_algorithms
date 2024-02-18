@@ -8,17 +8,6 @@
 #define up 0
 #define DOWN 1
 
-/**
- * enum bool - Enumeration of Boolean values
- * @false: Equals 0.
- * @true: Equals 1.
- */
-typedef enum bool
-{
-	false = 0,
-	true
-} bool;
-
 
 /* Data Structure */
 
@@ -46,6 +35,7 @@ void print_list(const listint_t *list);
 
 /* Swapping_function */
 void swap_funct(int *a, int *b);
+void swapper(listint_t *current, listint_t *current_old, listint_t **list);
 
 /* task 0 */
 void bubble_sort(int *array, size_t size);
